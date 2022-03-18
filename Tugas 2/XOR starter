@@ -1,0 +1,10 @@
+str = "label"
+int = 13
+
+unicode = [ord(c) for c in str]
+xor_unicode = [13 ^ i for i in unicode]
+xor_str = "".join(chr(o) for o in xor_unicode)
+
+flag = "crypto{" + xor_str + "}"
+print("Flag:")
+print(flag)
